@@ -1,7 +1,7 @@
-const Button = ({label, iconURL, backgroundColor, borderColor, textColor}) => {
+const Button = ({label, iconURL, backgroundColor, borderColor, textColor, fullwidth}) => {
   return (
     <button className={
-      `border rounded-full
+      `border rounded-full ${fullwidth && 'w-full'}
         ${
           !backgroundColor}
         ? 'border-coral-red bg-coral-red text-white'
